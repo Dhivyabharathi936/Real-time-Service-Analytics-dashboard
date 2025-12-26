@@ -1,0 +1,119 @@
+:root {
+    --bg-primary: #f5f7fb;
+    --card-bg: #ffffff;
+    --accent: #2c7be5;
+    --accent-muted: #a0c4ff;
+    --text-dark: #1c1f26;
+    --text-muted: #6c757d;
+    --border-color: #e5e9f2;
+    --shadow-soft: 0px 15px 35px rgba(30, 55, 90, 0.08);
+    --radius-lg: 18px;
+    --radius-md: 12px;
+    --radius-sm: 8px;
+    font-family: "Segoe UI", "Inter", "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-dark);
+}
+
+.page-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.page-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.stApp {
+    padding-bottom: 40px;
+}
+
+.filter-card,
+.section-card {
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    padding: 22px 26px;
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 24px;
+}
+
+.kpi-card {
+    background: linear-gradient(135deg, #ffffff, #f4f7ff);
+    border-radius: var(--radius-lg);
+    padding: 20px 24px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(44, 123, 229, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 20px 35px rgba(25, 55, 109, 0.18);
+}
+
+.kpi-label {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.25rem;
+}
+
+.kpi-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.kpi-subtext {
+    font-size: 0.85rem;
+    color: var(--accent);
+}
+
+.section-header {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(44, 123, 229, 0.2), rgba(255, 255, 255, 0));
+    margin: 18px 0;
+}
+
+.stDataFrame {
+    background: transparent;
+}
+
+.dataframe-container {
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    box-shadow: var(--shadow-soft);
+    padding: 12px;
+}
+
+.search-input input {
+    border-radius: var(--radius-md) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.metric-positive {
+    color: #16c784;
+}
+
+.metric-warning {
+    color: #ff6b6b;
+}
+
+
+
